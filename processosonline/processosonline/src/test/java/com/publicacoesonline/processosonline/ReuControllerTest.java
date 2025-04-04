@@ -60,7 +60,7 @@ public class ReuControllerTest {
     void naoDeveAdicionarReuComProcessoInexistente() {
         ReuRequest reu = new ReuRequest();
         reu.setNome("José Nulo");
-        reu.setProcessoId(99999L); // processo inexistente
+        reu.setProcessoId(99999L);
 
         ResponseEntity<String> response = restTemplate.postForEntity(getUrl("/api/reus"), reu, String.class);
 

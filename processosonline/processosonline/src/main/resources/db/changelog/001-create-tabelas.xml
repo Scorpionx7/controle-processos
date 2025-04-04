@@ -6,7 +6,7 @@
 
     <changeSet id="001" author="esther">
 
-        <!-- Tabela de Processos -->
+
         <createTable tableName="processos">
             <column name="id" type="BIGSERIAL">
                 <constraints primaryKey="true" nullable="false"/>
@@ -20,7 +20,7 @@
             </column>
         </createTable>
 
-        <!-- Tabela de Réus -->
+
         <createTable tableName="reus">
             <column name="id" type="BIGSERIAL">
                 <constraints primaryKey="true" nullable="false"/>
@@ -33,7 +33,7 @@
             </column>
         </createTable>
 
-        <!-- Chave estrangeira -->
+
         <addForeignKeyConstraint
                 baseTableName="reus"
                 baseColumnNames="processo_id"

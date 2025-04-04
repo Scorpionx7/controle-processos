@@ -48,7 +48,7 @@ public class ProcessoControllerTest {
     @Order(2)
     void naoDeveCriarProcessoDuplicado() {
         ProcessoRequest dto = new ProcessoRequest();
-        dto.setNumeroProcesso(NUMERO_PROCESSO); // igual ao anterior
+        dto.setNumeroProcesso(NUMERO_PROCESSO);
         dto.setDescricao("Processo duplicado");
         dto.setDataAbertura(LocalDate.now());
 
@@ -70,7 +70,7 @@ public class ProcessoControllerTest {
     @Test
     @Order(4)
     void deveExcluirProcessoExistente() {
-        // Buscar o ID real do processo criado anteriormente
+
         ResponseEntity<Processo[]> response = restTemplate.getForEntity(getUrl("/api/processos"), Processo[].class);
         Long id = response.getBody()[0].getId();
 
