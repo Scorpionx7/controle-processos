@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ProcessosonlineApplication<processosonline>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.publicacoesonline.processosonline.ProcessosonlineApplication",
+            "projectName": "processosonline",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
